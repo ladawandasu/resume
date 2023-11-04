@@ -84,12 +84,12 @@ justify-content: center;
 }
 
 .my-h3 {
-font-size: 80px;
+font-size: 50px;
 font-family: 'Noto Serif', serif;
 font-weight: bolder;
  text-transform: uppercase;
-  line-height: 95px;
-  margin-top: 3rem;  
+  line-height: 90px;
+  margin-top: 2rem;  
   color: BROWN;
 }
   
@@ -107,11 +107,7 @@ margin-top: 10rem;
   height: 300px;
 }
 
-.oio {
-display: flex;
-justify-content: space-around;
-  padding: 2rem 0;
-}
+
 
 .my-h1{
 text-transform: uppercase;
@@ -205,7 +201,7 @@ width: 100%;
  line-height: 35px;
   color: antiquewhite; 
      padding:3rem;
-     justify-content: center;
+    justify-content: center; 
 }
 
 .skill h3 {
@@ -316,17 +312,17 @@ progress[value]::after {
   --size: 30px;
   width: var(--size);
   height: var(--size);
-  position: static;
+  position: relative;
   left: var(--progress-value-percent);
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #244248;
+  background-color: antiquewhite;
   border-radius: 50%;
   content: attr(value);
   content: var(--progress-value-string, var(--value));
   font-size: 12px;
   font-weight: 700;
-  color: antiquewhite;
+  color: #244248;
 }
 
 @keyframes progress {
@@ -448,6 +444,7 @@ opacity: 0.7;
     font-weight: 200;
 }
 
+
 @media only screen  and (max-width: 900px) 
 {
  
@@ -467,7 +464,7 @@ nav h { margin: 20px 0;
 
 nav ul {
 width: 100%;
-background-color: #000;
+background-color: #244248;
 display: none;
 flex-direction: column;
 transition: .3s ease;
@@ -483,16 +480,8 @@ border: bottom: 1px solid #aa886c;
 }
 }
 
-
-
 .accordion-header {
 font-family: 'Noto Serif', serif;
   text-transform: uppercase;
   font-size: 3rem;
-
-}
-
-#experience h1 {
-font-family: 'Noto Serif', serif;
-  text-transform: uppercase;
 }
