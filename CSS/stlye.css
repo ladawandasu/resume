@@ -1,21 +1,16 @@
 nav {
-width: 100%;
-height: 80px;
 background-color: #244248;
 display: flex;
-flex-direction: row;
-justify-content: space-around;
 align-items: center;
-  font-family: 'Libre Baskerville', serif;
+font-family: 'Noto Serif', serif;
 }
 
-nav ul {
-display: flex;
+
+.nav-item {
+  padding-left:5rem;
+
 }
 
-nav ul li {
-list-style: none;
-}
 .h2 {
 color: antiquewhite;
 }
@@ -30,13 +25,22 @@ justify-content: space-around;
 nav ul li a {
 text-decoration: none;
 color: antiquewhite;
-padding: 15px 30px;
+padding: 15px 35px;
 text-transform: uppercase;
 transition: .3s ease;
+  
 }
 
 nav ul li a:hover {
 color: white;
+}
+
+.modal-dialog p {
+font-size: 20px;
+line-height: 50px;
+  color: black;
+  padding: 1rem;
+  font-family: 'Noto Serif', serif;
 }
 
 .mymy {
@@ -47,6 +51,7 @@ justify-content: space-between;
 
 .mylink{
 color: white;
+  font-family: 'Noto Serif', serif;
 }
 
 .white{
@@ -71,42 +76,37 @@ display: none;
 
 .my-header {
   background-color: c5ebc5;
-  height: 1000px;
-  background-size: cover;
+  height: 900px;
+  font-family: 'Noto Serif', serif;
   background-position: center;
   display: flex;
 justify-content: center;
-
 }
 
-
 .my-h3 {
-font-size:100px;
-font-family: 'Times New Roman', Times, serif;
+font-size: 80px;
+font-family: 'Noto Serif', serif;
 font-weight: bolder;
-   text-transform: uppercase;
+ text-transform: uppercase;
   line-height: 95px;
-  align-items: center;
   margin-top: 3rem;  
   color: BROWN;
 }
   
 .my-header-info {
-  margin: 5em
+  margin: 3em
     display: flex;
 justify-content: center;
 }
 
-
 .my-porfile {
 margin-top: 10rem;
-
 }
+
 .my-about {
-
   height: 300px;
-
 }
+
 .oio {
 display: flex;
 justify-content: space-around;
@@ -116,10 +116,11 @@ justify-content: space-around;
 .my-h1{
 text-transform: uppercase;
 font-size: 3rem;
-   border-style: outset; 
-  color: antiquewhite;
+border-style: outset; 
+color: antiquewhite;
 border-color: antiquewhite;
-  padding: 1rem;
+padding: 1rem;
+ font-family: 'Noto Serif', serif;
 }
 
 .my-ed {
@@ -129,6 +130,7 @@ font-size: 3rem;
   color: #244248;
 border-color: #244248;
   padding: 1rem;
+  font-family: 'Noto Serif', serif;
 }
 
 .my-skill {
@@ -138,6 +140,17 @@ font-size: 3rem;
   color: antiquewhite;
 border-color: antiquewhite;
   padding: 1rem;
+  font-family: 'Noto Serif', serif;
+}
+
+.my-work {
+ text-transform: uppercase;
+font-size: 3rem;
+  border-style: outset; 
+  color: #244248;
+border-color: #244248;
+  padding: 1rem
+font-family: 'Noto Serif', serif;
 }
 
 .my-contact {
@@ -154,13 +167,15 @@ border-color: antiquewhite;
     text-transform: uppercase;
   font-size: 25px;
 color: antiquewhite;
-  
+  font-family: 'Noto Serif', serif;
 }
 
 .about-me p {
   color: antiquewhite;
 font-size: 20px;
   line-height: 50px;
+    font-family: 'Noto Serif', serif;
+
 }
 
 .my-info{
@@ -174,6 +189,7 @@ font-size: 20px;
   font-size: 25px; 
   color: antiquewhite;
   line-height: 35px;
+    font-family: 'Noto Serif', serif;
 }
 
 .my-info p {
@@ -181,13 +197,13 @@ font-size: 20px;
 line-height: 50px;
   color: antiquewhite;
   padding: 1rem;
+    font-family: 'Noto Serif', serif;
 }
 
 .skill {
 width: 100%;
  line-height: 35px;
   color: antiquewhite; 
-
      padding:3rem;
      justify-content: center;
 }
@@ -196,7 +212,8 @@ width: 100%;
 text-transform: uppercase;
   font-size: 2rem;
 color: antiquewhite;
-  line-height: 35px;
+  line-height: 30px;
+    font-family: 'Noto Serif', serif;
 }
 
 .skill p {
@@ -204,21 +221,24 @@ color: antiquewhite;
 font-size: 16px;
 line-height: 35px;
   color: antiquewhite;
+    font-family: 'Noto Serif', serif;
+
 }
 
 .lang {
 width: 100%;
  line-height: 25px;
-  color: antiquewhite; 
-
+  color: antiquewhite;
   padding:3rem;
      justify-content: center;
 }
+
 .lang h3{
 text-transform: uppercase;
   font-size: 2rem;
 color: antiquewhite;
-  line-height: 35px;
+    font-family: 'Noto Serif', serif;
+
 }
 
 .lang p {
@@ -246,10 +266,9 @@ line-height: 35px;
   --progress-filled-color-l: 49.2;
 }
 
-
 progress[value] {
   display: block;
-  position: absolute;
+  
   appearance: none;
   width: 100%;
   height: 20px;
@@ -297,7 +316,7 @@ progress[value]::after {
   --size: 30px;
   width: var(--size);
   height: var(--size);
-  position: absolute;
+  position: static;
   left: var(--progress-value-percent);
   top: 50%;
   transform: translate(-50%, -50%);
@@ -349,6 +368,8 @@ background-color: aquamarine;
 
 .footerbottom p {
 color: white;
+    font-family: 'Noto Serif', serif;
+
 }
 
 .footerBottom {
@@ -376,12 +397,16 @@ opacity: 0.7;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
+    font-family: 'Noto Serif', serif;
+
 }
 .footer-content p{
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
     font-size: 14px;
+    font-family: 'Noto Serif', serif;
+
 }
 .socials{
     list-style: none;
@@ -421,4 +446,53 @@ opacity: 0.7;
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
+}
+
+@media only screen  and (max-width: 900px) 
+{
+ 
+nav { background-color: #244248;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.btn-hamburger { display: block;
+  position: fixed ;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+nav h { margin: 20px 0;
+}
+
+nav ul {
+width: 100%;
+background-color: #000;
+display: none;
+flex-direction: column;
+transition: .3s ease;
+}
+
+nav ul li a {
+display: flex;
+justify-content: center;
+border: bottom: 1px solid #aa886c;
+}
+.nav-active {
+  display: flex;
+}
+}
+
+
+
+.accordion-header {
+font-family: 'Noto Serif', serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+
+}
+
+#experience h1 {
+font-family: 'Noto Serif', serif;
+  text-transform: uppercase;
 }
